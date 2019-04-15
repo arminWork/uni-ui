@@ -1,11 +1,11 @@
 <template>
 	<view>
-		<view>
-			<view class="example-title">基本用法</view>
+		<view class="example-title">基本用法</view>
+		<view class="example-body">
 			<uni-load-more :status="status"></uni-load-more>
 		</view>
-		<view>
-			<view class="example-title">修改默认颜色及文字</view>
+		<view class="example-title">修改默认颜色及文字</view>
+		<view class="example-body">
 			<uni-load-more color="#007aff" :status="status" :contentText="contentText"></uni-load-more>
 		</view>
 		
@@ -61,7 +61,12 @@
 	uni-radio-group uni-label {
 		padding: 0;
 	}
-
+	.uni-list {
+		background: #fff;
+	}
+	.example-body {
+		padding: 10upx 30upx;
+	}
 	.uni-list-item__container {
 		padding: 24upx 30upx;
 		width: 100%;

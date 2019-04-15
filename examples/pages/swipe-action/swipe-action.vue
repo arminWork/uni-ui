@@ -99,7 +99,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.cont {
 		height: 90upx;
 		line-height: 90upx;
@@ -116,7 +116,7 @@
 		height: 1px;
 		content: '';
 		transform: scaleY(0.5);
-		background-color: #c8c7cc;
+		background-color: $uni-border-color;
 	}
 
 	.cont::after {
@@ -128,7 +128,7 @@
 		height: 1px;
 		content: '';
 		transform: scaleY(0.5);
-		background-color: #c8c7cc;
+		background-color: $uni-border-color;
 	}
 	.example-body {
 		display: flex;

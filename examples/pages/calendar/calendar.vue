@@ -1,16 +1,16 @@
 <template>
-	<view class="calendar-content">
-		<!-- :start-date="'2019-2-10'"
-		:end-date="'2019-3-15'" -->
-		<text class="calendar-title">日历组件</text>
-		<view class="calendar-tags-group">
-			<view class="calendar-tags" :class="{ checked: item.checked }" v-for="(item, index) in tags" :key="index" @click="toggle(index, item)">
-				<view class="calendar-tags-item">{{ item.name }}</view>
+	<view>
+		<view class="example-title">日历组件</view>
+		<view class="example-body">
+			<view class="calendar-tags-group">
+				<view class="calendar-tags" :class="{ checked: item.checked }" v-for="(item, index) in tags" :key="index" @click="toggle(index, item)">
+					<view class="calendar-tags-item">{{ item.name }}</view>
+				</view>
 			</view>
+			<button class="calendar-button" type="button" @click="open">打开日历</button>
 		</view>
-		<button class="calendar-button" type="button" @click="open">打开日历</button>
-		<text v-if="timeData.lunar" class="calendar-title">已选日期</text>
-		<view v-if="timeData.lunar" class="calendar-info">
+		<view v-if="timeData.lunar" class="example-title">已选日期</view>
+		<view v-if="timeData.lunar" class="example-body calendar-info">
 			<view>当前选择时间 : {{ timeData.fulldate }}</view>
 			<view v-if="tags[0].checked">农历日期 : {{ timeData.year + '年' + timeData.month + '月' + timeData.date + '日 （' + timeData.lunar.astro + ')' }}</view>
 			<view v-if="tags[0].checked">
@@ -96,7 +96,7 @@ export default {
 		toggle(index, item) {
 			this.tags[index].checked = !item.checked;
 			// item.checked = !item.checked;
-			console.log(index)
+			console.log(index);
 			if (index === 2) {
 				this.tags[3].checked = false;
 			}
@@ -147,30 +147,13 @@ export default {
 </script>
 
 <style>
-page {
-	background: #fff;
-}
-
-.calendar-content {
-	padding: 20upx 0;
-	padding-bottom: 60upx;
-	font-size: 26upx;
-}
-
-.calendar-content > .calendar-title {
-	line-height: 80upx;
-	/* font-weight: bold; */
-	color: #666;
-	font-size: 32upx;
-	/* border-left: 2px #0d9ebb solid; */
-	/* padding-left: 20upx; */
-	margin: 0 20upx;
+.example-body {
+	padding: 30upx 15upx;
 }
 .calendar-tags-group {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0 10upx;
 }
 .calendar-tags {
 	width: 50%;
@@ -182,7 +165,7 @@ page {
 	color: #333;
 	border-radius: 10upx;
 	text-align: center;
-	margin: 10upx;
+	margin: 15upx;
 	background: #f8f8f8;
 }
 .calendar-tags-item:active {
@@ -194,10 +177,10 @@ page {
 	border: 1px rgba(0, 0, 0, 0.1) solid;
 }
 .calendar-button {
-	margin: 10upx 20upx;
+	margin: 10upx 15upx;
 }
 .calendar-info {
-	padding: 0 20upx;
+	padding: 30upx 30upx;
 }
 
 .calendar-mask {

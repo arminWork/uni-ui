@@ -4,7 +4,7 @@
 		<view class="uni-popup" :class="'uni-popup-' + position + ' ' + 'uni-popup-' + mode" v-show="show">
 			{{ msg }}
 			<slot></slot>
-			<view v-if="position === 'middle' && mode === 'insert'" class=" uni-icon uni-icon-close" :class="{
+			<view v-if="position === 'middle' && mode === 'insert'" class="uni-icon uni-icon-close" :class="{
 					'uni-close-bottom': buttonMode === 'bottom',
 					'uni-close-right': buttonMode === 'right'
 				}"
@@ -155,6 +155,8 @@
 		margin: auto;
 		left: 0;
 		right: 0;
+		width: 28px;
+		height: 28px;
 	}
 	.uni-close-right {
 		right: -60upx;
