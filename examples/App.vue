@@ -21,16 +21,16 @@ page {
 	background-color: #f5f5f5;
 }
 view {
-	font-size: $uni-font-size-base;
+	font-size: 28upx;
 	line-height: inherit;
 }
 .example {
 	padding: 0 30upx 30upx;
 }
 .example-title {
-	font-size: $uni-font-size-lg;
+	font-size: 32upx;
 	// line-height: $uni-font-size-base;
-	color: $uni-text-color;
+	color: #464e52;
 	padding: 30upx;
 	margin-top: 20upx;
 	position: relative;
