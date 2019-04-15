@@ -153,7 +153,7 @@
 			overflow: hidden;
 			display: flex;
 			flex-direction: column;
-
+			color: #3b4144;
 			&-title {
 				font-size: $uni-font-size-lg;
 				text-overflow: ellipsis;
@@ -164,6 +164,7 @@
 			}
 
 			&-note {
+				margin-top: 6upx;
 				color: $uni-text-color-grey;
 				font-size: $uni-font-size-base;
 				white-space: normal;

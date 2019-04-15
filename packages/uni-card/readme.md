@@ -39,7 +39,7 @@ export default {
 |note|String||底部信息|
 |thumbnail|String||标题左侧缩略图|
 |is-full|Boolean|false|卡片内容是否通栏，为true时将去除padding值|
-
+|is-shadow|Boolean|false|卡片内容是否开启阴影|
 **事件说明：**
 
 |事件称名|说明|返回参数|

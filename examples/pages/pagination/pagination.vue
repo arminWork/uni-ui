@@ -1,13 +1,21 @@
 <template>
 	<view>
 		<view class="example-title">默认样式</view>
-		<uni-pagination title="标题文字" :total="20"></uni-pagination>
+		<view class="example-body">
+			<uni-pagination title="标题文字" :total="50"></uni-pagination>
+		</view>
         <view class="example-title">修改按钮文字</view>
-        <uni-pagination title="标题文字" :total="20" prev-text="前一页" next-text="后一页"></uni-pagination>
+		<view class="example-body">
+			<uni-pagination title="标题文字" :total="50" prev-text="前一页" next-text="后一页"></uni-pagination>
+		</view>
         <view class="example-title">图标样式</view>
-        <uni-pagination title="标题文字" :show-icon="true" :total="20"></uni-pagination>
+		<view class="example-body">
+			<uni-pagination title="标题文字" :show-icon="true" :total="50"></uni-pagination>
+		</view>
         <view class="example-title">修改数据长度</view>
-        <uni-pagination title="标题文字" show-icon="true" :current="current" :total="total" @change="change"></uni-pagination>
+		<view class="example-body">
+			<uni-pagination title="标题文字" show-icon="true" :current="current" :total="total" @change="change"></uni-pagination>
+		</view>
         <view class="btn-view">
             <view>
                 当前页：{{current}}，数据总量：{{total}}条，每页数据：{{pageSize}}
@@ -45,8 +53,9 @@
 
 <style>
     .btn-view{
-        margin: 30upx 30upx 0;
+        padding: 30upx;
         text-align: center;
+		background: #fff;
     }
     button{
         margin-top: 30upx;

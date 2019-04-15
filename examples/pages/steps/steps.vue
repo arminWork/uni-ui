@@ -1,9 +1,13 @@
 <template>
-    <view class="example">
+    <view>
         <view class="example-title">基本用法</view>
-        <uni-steps :options="list1" :active="active"></uni-steps>
+		<view class="example-body">
+			<uni-steps :options="list1" :active="active"></uni-steps>
+		</view>
         <view class="example-title">纵向排列</view>
-        <uni-steps :options="list2" direction="column" :active="active"></uni-steps>
+		<view class="example-body">
+			<uni-steps :options="list2" direction="column" :active="active"></uni-steps>
+		</view>
         <button type="primary" @click="change">改变状态</button>
     </view>
 </template>

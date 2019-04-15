@@ -36,10 +36,30 @@ view {
 	position: relative;
 	background-color: #fff;
 }
+.example-title__after {
+	position: relative;
+	color: #031e3c;
+}
+.example-title:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 6upx;
+	height: 40upx;
+	border-top-right-radius: 100upx;
+	border-bottom-right-radius: 100upx;
+	background-color: #031e3c;
+}
 .example .example-title {
 	margin: 40upx 0;
 }
 .example-body {
-	padding: 0 40upx;
+	// padding: 0 40upx;
+	border-top: 1px #f5f5f5 solid;
+	padding: 30upx;
+	background: #ffffff;
 }
 </style>
